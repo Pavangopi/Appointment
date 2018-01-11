@@ -43,7 +43,14 @@
 		}
 		
 	}
- 
+
+
+     function preventBack() { window.history.forward(1); }
+     setTimeout("preventBack()", 0);
+     window.onunload = function () { null };
+
+     
+
         //-->
     </script>
 </head>
@@ -52,6 +59,9 @@
 	<div class="w3-contant">
 	<section>
 	<div class="w3-bar w3-green w3-margin-top">
+			<a href="LogoutServlet"><p align="right">
+  <input type="button" value="logout" onkeypress="return preventBack()"/>
+</p></a>
         <center><h1>Fill Your Appointment Details</h1></center>
 	</div>
 	<aside class=" w3-margin-top w3-quarter ">
@@ -95,7 +105,7 @@
                 <td width="57%"><select name="time">
                                 <option value="Default">Default</option>
                                 <option value="10am">10am</option>
-                                <option value="saab">11am</option>
+                                <option value="11am">11am</option>
                                 <option value="11am">12pm</option>
                                 <option value="1pm">1pm</option>
                                 <option value="3pm">3pm</option>

@@ -19,6 +19,8 @@
 				<a href="index.jsp" class="w3-bar-item w3-grey"><button>Home</button></a> <a
 					href="login.jsp" class="w3-bar-item w3-grey"><button>Login</button></a> <a
 					href="register.jsp" class="w3-bar-item w3-grey"><button>Regsister</button></a>
+	
+                    
 				<a href="#" class="w3-bar-item w3-grey"><button>Contact
 						us</button></a> <a href="#" class="w3-bar-item w3-grey"><button>Services</button></a>
 			</div>

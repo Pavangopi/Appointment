@@ -21,6 +21,8 @@ import com.google.appengine.api.datastore.Key;
 import com.google.appengine.api.datastore.KeyFactory;
 
 public class AppointmentServlet extends HttpServlet {  
+	
+
 	//Set<Account> acc = new HashSet<Account>();
     protected void doGet(HttpServletRequest request, HttpServletResponse response)  
                     throws ServletException, IOException {  
@@ -38,7 +40,8 @@ public class AppointmentServlet extends HttpServlet {
         String contactnumber=request.getParameter("contactnumber");
         String email=request.getParameter("email");
         String username=request.getParameter("username");
- 
+        
+        
                  System.out.println(username);
  
         DatastoreService dataStore =DatastoreServiceFactory.getDatastoreService();
@@ -49,6 +52,7 @@ public class AppointmentServlet extends HttpServlet {
         	String usernameDb=(String)e.getProperty("username");
             System.out.println("user DB VALUE IS="+usernameDb);
         	
+            
 
 
        

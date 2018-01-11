@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.imageio.ImageIO;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;  
 import javax.servlet.http.HttpServlet;  
 import javax.servlet.http.HttpServletRequest;  
@@ -27,7 +28,7 @@ public class LoginServlet extends HttpServlet {
        
         String username=request.getParameter("username");  
         String password=request.getParameter("password"); 
-       
+
         //String confirmpassword=request.getParameter("password"); 
         DatastoreService dataStore =DatastoreServiceFactory.getDatastoreService();
         Key loginkey = KeyFactory.createKey("Register", username);
@@ -38,8 +39,14 @@ public class LoginServlet extends HttpServlet {
         	String gender=(String)e.getProperty("gender");
         	System.out.println("PASSWORD DB VALUE IS="+passwordDb);
         	System.out.println("user DB VALUE IS="+username);
-        	System.out.print("gender value is ="+gender);
+        	//System.out.print("gender value is ="+gender);
+        	
 
+                	
+      	/* 
+          sessi.setAttribute("username", username);
+          response.sendRedirect("/BookeddetailsServlet");
+                                                           */
         
         if(username.equals(usernameDb)&&password.equals(passwordDb)){  
        
@@ -48,7 +55,7 @@ public class LoginServlet extends HttpServlet {
        out.println("</center>");
        HttpSession session=request.getSession();  
         session.setAttribute("username",username);  
-        
+       //request.getRequestDispatcher("/BookedServlet").forward(request, response);  
         request.getRequestDispatcher("loginsuccess.jsp").include(request, response);  
         //ImageIO.read(new File("image/newimage.jpg"));
         //request.getRequestDispatcher("newimage.jpg").include(request, response);  

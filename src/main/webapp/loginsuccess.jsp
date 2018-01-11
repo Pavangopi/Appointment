@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 
 <title>Appoinment</title>
- <script type = "text/javascript" >
+
+	<script type = "text/javascript" >
         function preventBack() { window.history.forward(1); }
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
@@ -18,10 +19,11 @@
 	<div class="w3-contant">
 	<section>
 	<div class="w3-bar w3-green w3-margin-top">
-        <center><h1>Book Your Appoinment </h1>
-         <a href="LogoutServlet"><p align="right">
+	<a href="LogoutServlet"><p align="right">
   <input type="button" value="logout" onkeypress="return preventBack()"/>
-</p></a></center>
+</p></a>
+        <center><h1>Book Your Appoinment </h1>
+         </center>
 	</div>
 	<aside class=" w3-margin-top w3-quarter ">
 
@@ -43,9 +45,11 @@
                     <p align="center">
                        <a href="appointment.jsp"> <input class="w3-green" type="submit" value="Book Appoinment" name="book"></a>
                        <br>
-                       
+                    
                     <p align="center">
-                       <a href="#"> <input class="w3-green" type="submit" value="Appoinment Details" name="book"></a>
+                       <a href="BookedServlet"> <input class="w3-green" type="submit" value="Appoinment Details" name="book"></a>
+                      
+                    
                        <br>
     <br>
     <br>

@@ -63,18 +63,27 @@ public class AppointmentdetailsServlet extends HttpServlet {
         		String patient = (String) result.getProperty("patientname");
         		  String doctor = (String) result.getProperty("doctor");
         		  String date = (String) result.getProperty("date");
-        		  String time = (String) result.getProperty("time");
+        		  String time = (String) result.getProperty("timeslot");
         		  String age = (String) result.getProperty("age");
         		  String gender = (String) result.getProperty("gender");
         		  
-        		
+        		  HttpSession session=request.getSession();
+                  session.setAttribute("patient", patient);
+                  session.setAttribute("doctor", doctor);
+                  session.setAttribute("time", time);
+                  session.setAttribute("date", date);
+                  session.setAttribute("age", age);
+                  session.setAttribute("gender", gender);
+                  response.sendRedirect("appointmentdetails.jsp");
+                  
+                  request.getRequestDispatcher("appointmentdetails.jsp").include(request, response); 
 
-        		  out.println(patient);
+        		 /* out.println(patient);
         		  out.println(doctor);
         		  out.println(date);
         		  out.println(time);
         		  out.println(age);
-        		  out.println(gender);
+        		  out.println(gender); */
         		  
      
         	}

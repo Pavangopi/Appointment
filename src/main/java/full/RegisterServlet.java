@@ -36,8 +36,7 @@ public class RegisterServlet extends HttpServlet {
         String contactnumber=request.getParameter("contactnumber");
         String email=request.getParameter("email");
         
- 
-    	
+
        
        
         	/*   try {

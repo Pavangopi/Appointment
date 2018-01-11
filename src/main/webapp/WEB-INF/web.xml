@@ -22,6 +22,16 @@
   </servlet-mapping>
     <servlet>
     <description></description>
+    <display-name>BookedServlet</display-name>
+    <servlet-name>BookedServlet</servlet-name>
+    <servlet-class>full.BookedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BookedServlet</servlet-name>
+    <url-pattern>/BookedServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
     <display-name>AppointmentdetailsServlet</display-name>
     <servlet-name>AppointmentdetailsServlet</servlet-name>
     <servlet-class>full.AppointmentdetailsServlet</servlet-class>
