@@ -47,8 +47,16 @@
                        <br>
                     
                     <p align="center">
-                       <a href="BookedServlet"> <input class="w3-green" type="submit" value="Appoinment Details" name="book"></a>
-                      
+                       <a href="update.jsp"> <input class="w3-green" type="submit" value="Update Appoinment Details" name="book"></a>
+                    
+                       <br>
+                       <p align="center">
+                       <a href="updatedetails.jsp"> <input class="w3-green" type="submit" value="Appoinment Details" name="book"></a>
+                    
+                       <br>
+                    
+                          <p align="center">
+                       <a href="delete.jsp"> <input class="w3-green" type="submit" value=" Delete Appoinment" name="book"></a>
                     
                        <br>
     <br>

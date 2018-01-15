@@ -74,8 +74,9 @@ public class AppointmentdetailsServlet extends HttpServlet {
                   session.setAttribute("date", date);
                   session.setAttribute("age", age);
                   session.setAttribute("gender", gender);
+                 // response.sendRedirect("update.jsp");
                   response.sendRedirect("appointmentdetails.jsp");
-                  
+                 
                   request.getRequestDispatcher("appointmentdetails.jsp").include(request, response); 
 
         		 /* out.println(patient);

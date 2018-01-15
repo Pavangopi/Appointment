@@ -20,7 +20,37 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/RegisterServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteServlet</display-name>
+    <servlet-name>DeleteServlet</servlet-name>
+    <servlet-class>full.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteServlet</servlet-name>
+    <url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReceptionistServlet</display-name>
+    <servlet-name>ReceptionistServlet</servlet-name>
+    <servlet-class>full.ReceptionistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceptionistServlet</servlet-name>
+    <url-pattern>/ReceptionistServlet</url-pattern>
+  </servlet-mapping>
     <servlet>
+    <description></description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>full.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <description></description>
     <display-name>BookedServlet</display-name>
     <servlet-name>BookedServlet</servlet-name>

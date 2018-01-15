@@ -2,7 +2,7 @@ package full;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-
+import full.LoginServlet;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -34,8 +34,8 @@ public class BookedServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		 PrintWriter out=response.getWriter(); 
 	    String user=request.getParameter("username");  
-	 String username=(String)request.getAttribute("username");
-
+	 
+	//out.println(username);
         //AppointmentServlet ob= new AppointmentServlet();
 	 
      out.println("<html"+" "
@@ -73,6 +73,8 @@ public class BookedServlet extends HttpServlet {
 
         for(Entity e1 : pq.asIterable()) {
        String patient= (String) e1.getProperty("patientname");
+      
+      
       
        Key loginkey = new KeyFactory.Builder("Appointment", patient).getKey();
       
@@ -142,6 +144,7 @@ out.println(    "<aside class=' w3-margin-top w3-quarter '>"
         	 out.println(time);
         	 out.println(age);
         	 out.println(gender); */
+
          
        }catch (EntityNotFoundException e) {
         	// TODO Auto-generated catch block
@@ -166,5 +169,6 @@ out.println(    "<aside class=' w3-margin-top w3-quarter '>"
 
 	}
 
+	
 
 }

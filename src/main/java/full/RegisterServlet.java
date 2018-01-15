@@ -59,7 +59,8 @@ public class RegisterServlet extends HttpServlet {
         u.setProperty("useremail", email);
         
         ds.put(u);
-       
+
+request.setAttribute("username",username);
         //request.getRequestDispatcher("login.jsp").include(request, response);
 
         

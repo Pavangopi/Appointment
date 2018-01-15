@@ -69,7 +69,17 @@ public class AppointmentServlet extends HttpServlet {
         u.setProperty("contactnumber", contactnumber);
         u.setProperty("useremail", email);
         
-        
+		  HttpSession session=request.getSession();
+          session.setAttribute("patient", patientname);
+          session.setAttribute("doctor", doctor);
+          session.setAttribute("time", time);
+          session.setAttribute("date", date);
+          session.setAttribute("age", age);
+          session.setAttribute("gender", gender);
+          session.setAttribute("contactnumber",contactnumber );
+          session.setAttribute("email", email);
+         
+       
         ds.put(u);
        
         //request.getRequestDispatcher("login.jsp").include(request, response);
