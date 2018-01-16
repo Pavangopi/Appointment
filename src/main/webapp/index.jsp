@@ -22,7 +22,7 @@
 	
                     
 				<a href="receptionistlogin.jsp" class="w3-bar-item w3-grey"><button>Receptionist Login
-						</button></a> <a href="#" class="w3-bar-item w3-grey"><button>Services</button></a>
+		
 			</div>
 			<aside class="w3-purple w3-margin-top w3-quarter ">
 			<center>

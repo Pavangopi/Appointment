@@ -71,6 +71,12 @@ span.psw {
 }
 </style>
 
+	<script type = "text/javascript" >
+        function preventBack() { window.history.forward(1); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+        
+</script>
 </head>
 <body>
 	<div class="w3-container">
@@ -78,6 +84,9 @@ span.psw {
 	<section>
 	<div class="w3-bar w3-green w3-margin-top">
         <center><h1>Delete Your Appoinment</h1></center>
+        	<a href="index.jsp"><p align="right">
+  <input type="button" value="logout" onkeypress="return preventBack()"/>
+</p></a>
 	</div>
 	<aside class=" w3-margin-top w3-quarter ">
 

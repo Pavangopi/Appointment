@@ -51,7 +51,7 @@
                     
                        <br>
                        <p align="center">
-                       <a href="updatedetails.jsp"> <input class="w3-green" type="submit" value="Appoinment Details" name="book"></a>
+                       <a href="Userdisplay.jsp"> <input class="w3-green" type="submit" value="Appoinment Details" name="book"></a>
                     
                        <br>
                     

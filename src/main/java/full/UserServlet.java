@@ -41,18 +41,18 @@ public class UserServlet extends HttpServlet {
             
         DatastoreService ds =DatastoreServiceFactory.getDatastoreService();
         
+        Filter currentUser = new FilterPredicate("patientname", FilterOperator.EQUAL, user);
         
-        
-        Query q = new Query("Appointment");
+        Query q = new Query("Appointment").setFilter(currentUser);
         PreparedQuery pq =  ds.prepare(q);
 
         for(Entity e1 : pq.asIterable()) {
        String patient= (String) e1.getProperty("patientname");
-   	
+      
       
       
        Key loginkey = new KeyFactory.Builder("Appointment", patient).getKey();
-	
+      
        //DatastoreService t1 = DatastoreServiceFactory.getDatastoreService();
        
         try {
@@ -76,15 +76,13 @@ public class UserServlet extends HttpServlet {
             session.setAttribute("date", date);
             session.setAttribute("age", age);
             session.setAttribute("gender", gender);
+            
+        
            // response.sendRedirect("update.jsp");
             response.sendRedirect("appointmentdetails.jsp");
-
+          
        
-        	out.print("<script type=\'text/javascript\'>");
-        	out.print("alert('Your( " +patient1 + ") Your Appointment details are as follows ' );");
-        	out.print("</script>");
         	request.getRequestDispatcher("appointmentdetails.jsp").include(request, response); 
-       
         	}
         	else{
         		out.println("<h1>"+"You Don't have any appointment to display");

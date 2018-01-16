@@ -37,13 +37,14 @@ public class DeleteServlet extends HttpServlet {
 	 
 	//out.println(username);
         //AppointmentServlet ob= new AppointmentServlet();
-	 
+	    out.println("<div style='background-color: green'>"
+	    		+ "<a href='index.jsp'>"+"<p align='right'>"+"<input type='button' value='logout' />"+"</p>"+"</a>"+"</div>");
             
         DatastoreService ds =DatastoreServiceFactory.getDatastoreService();
         
+        Filter currentUser = new FilterPredicate("patientname", FilterOperator.EQUAL, user);
         
-        
-        Query q = new Query("Appointment");
+        Query q = new Query("Appointment").setFilter(currentUser);
         PreparedQuery pq =  ds.prepare(q);
 
         for(Entity e1 : pq.asIterable()) {
@@ -70,10 +71,6 @@ public class DeleteServlet extends HttpServlet {
         	out.println("<h1>"+patient1+"Appointment deleted successfully");
         break;
         	}
-        	else{
-        		out.println("<h1>"+"You Don't have any appointment to delete");
-        		break;
-        	}
 
          
        }catch (EntityNotFoundException e) {
@@ -87,7 +84,12 @@ public class DeleteServlet extends HttpServlet {
         }
        
         }
-        
+
+    	if(user!=null){
+    		out.println("<h1>"+"Appointment for "+user+" does't exist any more");
+    		
+    	}
+
 	}
 
 	
