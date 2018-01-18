@@ -34,9 +34,10 @@ public class DeleteServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		 PrintWriter out=response.getWriter(); 
 	    String user=request.getParameter("patientname");  
-	 
+	    //response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
 	//out.println(username);
         //AppointmentServlet ob= new AppointmentServlet();
+	    out.println("<script type = 'text/javascript' >"+"function preventBack() { window.history.forward(1); } window.onunload = function () { null };"+"</script>");
 	    out.println("<div style='background-color: green'>"
 	    		+ "<a href='index.jsp'>"+"<p align='right'>"+"<input type='button' value='logout' />"+"</p>"+"</a>"+"</div>");
             

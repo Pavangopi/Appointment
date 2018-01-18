@@ -49,8 +49,7 @@ public class UserServlet extends HttpServlet {
         for(Entity e1 : pq.asIterable()) {
        String patient= (String) e1.getProperty("patientname");
       
-      
-      
+     
        Key loginkey = new KeyFactory.Builder("Appointment", patient).getKey();
       
        //DatastoreService t1 = DatastoreServiceFactory.getDatastoreService();
@@ -99,6 +98,7 @@ public class UserServlet extends HttpServlet {
         	System.out.println("I GOT EXCEPTION");
         	
         }
+        
        
         }
         

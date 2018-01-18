@@ -22,6 +22,7 @@ import com.google.appengine.api.datastore.KeyFactory;
 public class LoginServlet extends HttpServlet {  
     protected void doGet(HttpServletRequest request, HttpServletResponse response)  
                     throws ServletException, IOException {  
+    	response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
     	try{
         response.setContentType("text/html");  
         PrintWriter out=response.getWriter();  

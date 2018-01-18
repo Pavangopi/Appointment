@@ -4,9 +4,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
 <title>Home</title>
 <link rel="stylesheet" type="text/css"
 	href="https://www.w3schools.com/w3css/4/w3.css">
+	
+	<script type = "text/javascript" >
+        function preventBack() { window.history.forward(1); }
+       // setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+</script>
 </head>
 <body>
 	<div class="w3-container">
@@ -20,10 +27,9 @@
 					href="login.jsp" class="w3-bar-item w3-grey"><button>Login</button></a> <a
 					href="register.jsp" class="w3-bar-item w3-grey"><button>Regsister</button></a>
 	
-                    
-				<a href="receptionistlogin.jsp" class="w3-bar-item w3-grey"><button>Receptionist Login
-		
-			</div>
+    			<a href="receptionistlogin.jsp" class="w3-bar-item w3-grey"><button>Receptionist Login</button></a>
+					
+					</div>
 			<aside class="w3-purple w3-margin-top w3-quarter ">
 			<center>
 				<h3>Our Services</h3>

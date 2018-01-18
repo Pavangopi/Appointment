@@ -9,7 +9,7 @@
 
 	<script type = "text/javascript" >
         function preventBack() { window.history.forward(1); }
-        setTimeout("preventBack()", 0);
+        //setTimeout("preventBack()", 0);
         window.onunload = function () { null };
         
 </script>

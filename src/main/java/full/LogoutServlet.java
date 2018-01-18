@@ -12,8 +12,8 @@ public class LogoutServlet extends HttpServlet {
         protected void doGet(HttpServletRequest request, HttpServletResponse response)  
                                 throws ServletException, IOException {  
             response.setContentType("text/html");  
-            PrintWriter out=response.getWriter();  
-              
+            PrintWriter out=response.getWriter(); 
+            response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
             request.getRequestDispatcher("index.jsp").include(request, response);  
               
             HttpSession session=request.getSession();  
