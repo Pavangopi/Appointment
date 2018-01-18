@@ -81,7 +81,7 @@
             <tr>
                 <td align="left" valign="top" width="41%">UserName<span style="color:red">*</span></td>
  
-                <td width="57%"><input type="text" value="" name="patientname" placeholder="Enter UserName" size="24" required></td>
+                <td width="57%"><input type="text" value="${sessionScope.username }" name="patientname" placeholder="Enter UserName" size="24" required></td>
             </tr>
               <tr>
                 <td align="left" valign="top" width="41%">Doctor<span style="color:red">*</span></td>
@@ -139,7 +139,7 @@
  
             <td align="left" valign="top" width="41%">Contact Number<span style="color:red">*</span></td>
             <td width="57%">
-                <input type="text" value="" onkeypress="return isNumberKey(event)" name="contactnumber" placeholder="Enter Contactnumber" size="24" required></td>
+                <input type="text" value="" pattern="[1-9]{1}[0-9]{9}"onkeypress="return isNumberKey(event)" name="contactnumber" placeholder="Enter your 10 digits mobile number" size="24" required></td>
             </tr>
             
  

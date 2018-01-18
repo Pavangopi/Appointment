@@ -72,9 +72,12 @@ public class LoginServlet extends HttpServlet {
         }  
         }catch (EntityNotFoundException e) {
         	// TODO Auto-generated catch block
+        	 
         	out.println("<center>");
-            out.println("your not registered and please check your details");
+            out.println("your Username is not registered please click on register button to register");
+            
             out.println("</center>");
+            request.getRequestDispatcher("login.jsp").include(request, response); 
         	System.out.println("I GOT EXCEPTION");
         	
         }

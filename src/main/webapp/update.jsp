@@ -140,7 +140,7 @@
  
             <td align="left" valign="top" width="41%">Contact Number<span style="color:red">*</span></td>
             <td width="57%">
-                <input type="text" value="${sessionScope.contactnumber }" onkeypress="return isNumberKey(event)" name="contactnumber" placeholder="Enter Contactnumber" size="24" required></td>
+                <input type="text" value="${sessionScope.contactnumber }" pattern="[1-9]{1}[0-9]{9}" onkeypress="return isNumberKey(event)" name="contactnumber" placeholder="Enter your 10 digits mobile number" size="24" required></td>
             </tr>
             
  

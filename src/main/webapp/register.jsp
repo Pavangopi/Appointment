@@ -18,6 +18,7 @@
                 return false;
             }
             return true;
+            
         }
  function checkEmail() {
 		//alert("hello");
@@ -85,14 +86,14 @@
                 </td>
             </tr>
             <tr>
-                <td align="left" valign="top" width="41%">Address</td>
+                <td align="left" valign="top" width="41%">Address<span style="color:red">*</span></td>
  
                 <td width="57%"><textarea rows="4" maxlen="200" name="address" cols="20" placeholder="Enter Address" required></textarea></td>
             </tr> <tr>
  
-            <td align="left" valign="top" width="41%">Contact Number</td>
+            <td align="left" valign="top" width="41%">Contact Number<span style="color:red">*</span></td>
             <td width="57%">
-                <input type="text" value="" onkeypress="return isNumberKey(event)" name="contactnumber" placeholder="Enter Contact number"size="24" required></td>
+                <input type="text" value="" pattern="[1-9]{1}[0-9]{9}" onkeypress="return isNumberKey(event)" name="contactnumber" placeholder="Enter your 10 digits mobile number"size="24" required></td>
             </tr>
             
  

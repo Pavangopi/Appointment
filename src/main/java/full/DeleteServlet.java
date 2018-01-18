@@ -37,9 +37,27 @@ public class DeleteServlet extends HttpServlet {
 	    //response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
 	//out.println(username);
         //AppointmentServlet ob= new AppointmentServlet();
-	    out.println("<script type = 'text/javascript' >"+"function preventBack() { window.history.forward(1); } window.onunload = function () { null };"+"</script>");
+	    out.println("<html"+" "
+	     		+ "<head>"
+	     		+ "<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>"
+	     		+ "<title>"+ "Appoinment" +"</title>"
+	     		+ "<link rel='stylesheet' type='text/css' href='https://www.w3schools.com/w3css/4/w3.css'>"
+	     		+"<script type = 'text/javascript' >"
+	     		+"function preventBack() { window.history.forward(1); } window.onunload = function () { null };"
+	     		+"</script>"
+	     		+ "</head>"
+	     		+ "<body>"
+	     		+ "<div class='w3-container'"
+	     		+ "<div class='w3-contant'>"
+	     		+ "<section>"
+	     		+ "<div class='w3-bar w3-green w3-margin-top w3-center'>"+
+	     		"<a href='index.jsp'><p align='right'>"
+	     		+"<input type='button' value='logout' onkeypress='return preventBack()'/>"
+	     		+"</p>"
+	     		+"</a>");
+	  /*  out.println("<script type = 'text/javascript' >"+"function preventBack() { window.history.forward(1); } window.onunload = function () { null };"+"</script>");
 	    out.println("<div style='background-color: green'>"
-	    		+ "<a href='index.jsp'>"+"<p align='right'>"+"<input type='button' value='logout' />"+"</p>"+"</a>"+"</div>");
+	    		+ "<a href='index.jsp'>"+"<p align='right'>"+"<input type='button' value='logout' />"+"</p>"+"</a>"+"</div>"); */
             
         DatastoreService ds =DatastoreServiceFactory.getDatastoreService();
         
@@ -87,7 +105,7 @@ public class DeleteServlet extends HttpServlet {
         }
 
     	if(user!=null){
-    		out.println("<h1>"+"Appointment for "+user+" does't exist any more");
+    		out.println("<h1>"+"Appointment for "+user+" does't exist any more"+"</div>"+"</body>"+"</html>");
     		
     	}
 

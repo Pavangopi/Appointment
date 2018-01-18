@@ -107,7 +107,7 @@ public class AppointmentServlet extends HttpServlet {
        }catch (EntityNotFoundException e) {
         	// TODO Auto-generated catch block
         	out.println("<center>");
-            out.println(" please check your details");
+            out.println(" please check your details only registered user can  book appointment");
             out.println("</center>");
         	System.out.println("I GOT EXCEPTION");
         	
