@@ -55,7 +55,7 @@ public class ReceptionistServlet extends HttpServlet {
            // out.println("<br/>Sorry, username or password error!");  
            // out.println("</center>");
         	out.println("<script type=\"text/javascript\">");
-        	   out.println("alert('User or password incorrect');");
+        	   out.println("alert('Username or password incorrect');");
         	   out.println("</script>");
             request.getRequestDispatcher("receptionistlogin.jsp").include(request, response);  
         }  

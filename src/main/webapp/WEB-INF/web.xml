@@ -30,6 +30,16 @@
     <servlet-name>DeleteServlet</servlet-name>
     <url-pattern>/DeleteServlet</url-pattern>
   </servlet-mapping>
+    <servlet>
+    <description></description>
+    <display-name>ForgotServlet</display-name>
+    <servlet-name>ForgotServlet</servlet-name>
+    <servlet-class>full.ForgotServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForgotServlet</servlet-name>
+    <url-pattern>/ForgotServlet</url-pattern>
+  </servlet-mapping>
   <servlet>
     <description></description>
     <display-name>ReceptionistServlet</display-name>
@@ -40,7 +50,7 @@
     <servlet-name>ReceptionistServlet</servlet-name>
     <url-pattern>/ReceptionistServlet</url-pattern>
   </servlet-mapping>
-    <servlet>
+  <servlet>
     <description></description>
     <display-name>UserServlet</display-name>
     <servlet-name>UserServlet</servlet-name>

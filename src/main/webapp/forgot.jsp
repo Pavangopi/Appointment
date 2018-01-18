@@ -1,10 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Login</title>
+<title>forgot password</title>
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 form {
@@ -77,31 +77,30 @@ span.psw {
 	<div class="w3-contant">
 	<section>
 	<div class="w3-bar w3-green w3-margin-top">
-        <center><h1>Login to Book Your Appointment</h1></center>
+        <center><h1>Update Password</h1></center>
 	</div>
 	<aside class=" w3-margin-top w3-quarter ">
 
 			</aside>
 	<aside class=" w3-half w3-margin-top w3-border">
-	<h2 class="w3-center">Login Form</h2>
+	<h2 class="w3-center">Update Your Password </h2>
 
-	<form action="LoginServlet"method="get">
+	<form action="ForgotServlet"method="get">
   <div class="container">
   
     <label><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
+    <input type="text" value="${sessionScope.username }" placeholder="Enter Username" name="username" required>
 
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
+
+    <label><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Your Password" name="confirmpassword" required>
         
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"> Remember me
+    <button type="submit">Submit</button>
+  
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
-<a href="register.jsp"> <button type="button" class="cancelbtn">Register</button></a>
-  <!--   <span class="psw"><a href="#" >Forgot password?</a></span>   -->
-  </div>
 </form>
 
 
