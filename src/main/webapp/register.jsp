@@ -67,7 +67,7 @@
             <tr>
                 <td align="left" valign="top" width="41%">Password<span style="color:red">*</span></td>
                 <td width="57%">
-                    <input type="Password" value="" name="password" placeholder="Enter Password" size="24" required></td>
+                    <input type="Password" value="" name="password" placeholder="Enter Password" pattern=".{8,}"  size="24" required title="8 characters minimum"></td>
             </tr>
                         <tr>
                 <td align="left" valign="top" width="41%">ConfirmPassword<span style="color:red">*</span></td>

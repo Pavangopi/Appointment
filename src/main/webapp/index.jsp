@@ -8,11 +8,16 @@
 <title>Home</title>
 <link rel="stylesheet" type="text/css"
 	href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+.mySlides {display:none;}
+</style>
 	
 	<script type = "text/javascript" >
         function preventBack() { window.history.forward(1); }
        // setTimeout("preventBack()", 0);
         window.onunload = function () { null };
+        
+        
 </script>
 </head>
 <body>
@@ -23,11 +28,11 @@
 	</div>
 			<section>
 			<div class="w3-bar w3-grey w3-margin-top">
-				<a href="index.jsp" class="w3-bar-item w3-grey"><button>Home</button></a> <a
-					href="login.jsp" class="w3-bar-item w3-grey"><button>Login</button></a> <a
-					href="register.jsp" class="w3-bar-item w3-grey"><button>Regsister</button></a>
+				<a href="index.jsp" class="w3-bar-item w3-grey"><button class="w3-grey">Home</button></a> <a
+					href="login.jsp" class="w3-bar-item w3-grey"><button class="w3-grey">Login</button></a> <a
+					href="register.jsp" class="w3-bar-item w3-grey"><button class="w3-grey">Register</button></a>
 	
-    			<a href="receptionistlogin.jsp" class="w3-bar-item w3-grey"><button>Receptionist Login</button></a>
+    			<a href="receptionistlogin.jsp" class="w3-bar-item w3-grey"><button class="w3-grey">Receptionist Login</button></a>
 					
 					</div>
 			<aside class="w3-purple w3-margin-top w3-quarter ">
@@ -45,6 +50,33 @@
 			<h2 class="w3-center">An Easy Way For Doctor's Appointment</h2>
 
 			<div class="w3-content w3-display-container">
+	<center>	<!-- <img src="doctor.jpg" width="300" height="300" > -->
+	
+	
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="doctor5.jpg" style="width:100%">
+  <img class="mySlides" src="doctor4.jpg" style="width:100%">
+  <img class="mySlides" src="doctor2.jpg" style="width:100%">
+  <img class="mySlides" src="doctor3.jpg" style="width:100%">
+</div>
+	</center>
+	<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; During
 					an average doctor visit, more than half of all patients spend at
 					least twenty minutes in the waiting room and another fifteen
@@ -57,7 +89,7 @@
 					patient,book your appointment during the doctor's visit hours and
 					make your conslutaning the doctor smoother than before and we wish
 					our patients an happy conslutaning.</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; During
+		<!-- 		<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; During
 					an average doctor visit, more than half of all patients spend at
 					least twenty minutes in the waiting room and another fifteen
 					minutes (or more) in the exam room before seeing the doctor. When
@@ -69,7 +101,7 @@
 					here we came with a solution to meet the requirements of our
 					patient,book your appointment during the doctor's visit hours and
 					make your conslutaning the doctor smoother than before and we wish
-					our patients an happy conslutaning.</p>
+					our patients an happy conslutaning.</p>  -->
 			</div>
 
 

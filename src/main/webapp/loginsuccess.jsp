@@ -13,7 +13,7 @@
 
 	<script type = "text/javascript" >
         function preventBack() { window.history.forward(0); }
-       setTimeout("preventBack()", 0);
+        //setTimeout("preventBack()", 0);
         window.onunload = function () { null };
 </script>
 	<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
