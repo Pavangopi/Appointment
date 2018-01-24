@@ -87,7 +87,7 @@ public class DeleteServlet extends HttpServlet {
         	out.print("<script type=\'text/javascript\'>");
         	out.print("alert('Your( " +patient1 + ") Appointment is successfully Cancelled' );");
         	out.print("</script>");
-        	out.println("<h1>"+patient1+"Appointment deleted successfully");
+        	out.println("<h1>"+patient1+" Appointment deleted successfully");
         break;
         	}
 

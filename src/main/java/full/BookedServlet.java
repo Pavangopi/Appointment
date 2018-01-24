@@ -134,6 +134,7 @@ out.println(    "<aside class=' w3-margin-top w3-quarter '>"
 						+"</tr>"
 						+ " </table>"
 						+ "</div>"
+						+"</aside>"
 						+ "</section>"
 						+"<div class='w3-clear'>"
 		        		+ "</div>");
