@@ -39,11 +39,11 @@
 			<center>
 				<h3>Our Services</h3>
 				<ul class="w3-ul w3-hoverable">
-					<li>Treatment Of Acne/Pimples</li>
-					<li>Weight Loss Treatment</li>
-					<li>Treatment of Headaches</li>
-					<li>Treatment of Fever</li>
-					<li>Treatment of Cancer</li>
+					<a  style="text-decoration:none;" href="https://www.medicinenet.com/acne/article.htm" >	<li>Treatment Of Acne/Pimples</li></a>
+					<a  style="text-decoration:none;" href="https://dir.indiamart.com/chennai/weight-loss-treatment.html" ><li>Weight Loss Treatment</li></a>
+					<a  style="text-decoration:none;" href="https://www.webmd.com/migraines-headaches/understanding-headache-treatment-medref#1" >	<li>Treatment of Headaches</li></a>
+					<a  style="text-decoration:none;" href="https://www.mayoclinic.org/diseases-conditions/fever/in-depth/fever/art-20050997"> <li>Treatment of Fever</li></a>
+					<a  style="text-decoration:none;" href="https://www.cancer.gov/about-cancer/treatment" ><li>Treatment of Cancer</li></a>
 				</ul>
 			</center>
 			</aside> <aside class=" w3-half w3-margin-top w3-border">
@@ -109,11 +109,11 @@ function carousel() {
 			<center>
 				<h3>Our Services</h3>
 				<ul class="w3-ul w3-hoverable">
-					<li>Treatment of Hair Fall</li>
-					<li>Treatment of Red Eyes</li>
-					<li>Back Pain Treatment</li>
-					<li>Treatment of Pain</li>
-					<li>Treatment of Hair Loss</li>
+					<a  style="text-decoration:none;" href="https://www.rewardme.in/beauty/hair/article/fight-hair-fall-with-these-simple-steps" ><li>Treatment of Hair Fall</li></a>
+					<a  style="text-decoration:none;" href= "http://www.allaboutvision.com/conditions/red-eyes.htm" ><li>Treatment of Red Eyes</li></a>
+					<a  style="text-decoration:none;" href="https://www.spine-health.com/conditions/lower-back-pain/early-treatments-lower-back-pain" ><li>Back Pain Treatment</li></a>
+					<a  style="text-decoration:none;" href="https://www.webmd.com/pain-management/guide/pain-management-treatment-care" ><li>Treatment of Pain</li></a>
+					<a  style="text-decoration:none;" href="http://www.stylecraze.com/articles/home-remedies-to-control-hair-fall/#gref" ><li>Treatment of Hair Loss</li></a>
 				</ul>
 			</center>
 			</aside> </section>

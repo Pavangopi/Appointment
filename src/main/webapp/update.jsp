@@ -88,7 +88,7 @@
                 <td align="left" valign="top" width="41%">Doctor<span style="color:red">*</span></td>
  
                 <td width="57%"><select name="doctor"  value="${sessionScope.doctor }">
-                                <option value="Default">Default</option>
+                               <!--  <option value="Default">Default</option> -->
                                 <option value="Dr.Arun">Dr.Arun</option>
                                 <option value="Dr.Divya">Dr.Divya</option>
                                 <option value="Dr.Sriram">Dr.Sriram</option>
@@ -104,7 +104,7 @@
                             <td align="left" valign="top" width="41%">Time Slot<span style="color:red">*</span></td>
  
                 <td width="57%"><select name="time" value="${sessionScope.time }">
-                                <option value="Default">Default</option>
+                              <!--   <option value="Default">Default</option> -->
                                 <option value="10am">10am</option>
                                 <option value="11am">11am</option>
                                 <option value="11am">12pm</option>
@@ -122,7 +122,7 @@
                 <td align="left" valign="top" width="41%">Gender<span style="color:red">*</span></td>
  
                 <td width="57%"><select name="gender" value="${sessionScope.gender }" >
-                                <option value="Default">Default</option>
+                               <!--  <option value="Default">Default</option> -->
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 

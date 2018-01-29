@@ -78,7 +78,7 @@
                 <td align="left" valign="top" width="41%">Gender<span style="color:red">*</span></td>
  
                 <td width="57%"><select name="gender" >
-                                <option value="Default">Default</option>
+                              <!--   <option value="Default">Default</option> -->
                                 <option value="Male">Male</option>
                                 <option value="Female">Female</option>
                                 
